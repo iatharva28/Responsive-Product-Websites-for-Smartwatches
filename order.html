@@ -1,0 +1,43 @@
+<html>
+  <head>
+      <title>Product Landing Page</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="style1.css"> 
+        <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+        <script src="main1.js"></script>
+
+  </head>
+
+<body>  
+ <a href="#" class="logo">Watch</a> 
+<div class="box">
+                 <p style=" font-size: 22px;text-align:center">Order Now!</p>
+                  <form name="Mform" >
+                   <p>Name:</p>
+                       <input id="name" type="text" onblur="checkname();" style="font-size:14px" placeholder="2-30 character" min="2"  required/><span id="nmsg"></span><br>
+                   <p>Email</p>
+                     <input type="email" id="mail" style="font-size:14px"  placeholder="@gmail.com" required><br>
+                   <p>Contact no.</p>
+                     <input type="number" id="number"style="font-size:14px" placeholder=" Enter valid number" onblur="checkno();" min="0" required/><span id="pmsg"></span><br>
+                   <p>Select Model:</p><br>
+                    <select id="model" >
+                    <option  value="Apple Watch Series 4">Apple Watch Series 4</option>
+                    <option  value="Apple Watch Nike+">Apple Watch Nike+</option>
+                    <option value="Apple Watch Hermes">Apple Watch Hermes</option>
+                    
+                  
+                    </select>
+                    <p>Date of delivery</p>
+                       <input type="date" id="dat" min="2021-3-3" max="2021-10-30"required><br><br><br>
+                    <div style="font-weight:bold">Quantity</div>
+                     <input id='qt' type=number min="1" max="5" required><br><br><br>
+                    <div style="font-weight:bold">Message(optional)</div><br><br>
+                     <textarea id="area" placeholder=" max 50 characters" maxlength="50" ></textarea><br><br>
+                       <input type="submit" value="Click to order" style="font-size:16px;" id ="btn" onclick="display()">
+                    <p id="paad"></p>
+                  </form>
+                </div>
+              
+        
+    </body>
+   </html>      
